@@ -6,11 +6,11 @@ from time import sleep
 on = False
 
 
-def main():
+def main(): #Главная функция
     while True:
-        if keyboard.is_pressed("p"):
+        if keyboard.is_pressed("p"): 
             IsOn()
-        elif keyboard.is_pressed("o"):
+        elif keyboard.is_pressed("o"): 
             quit()
         elif on == True:
             sleep(1)
@@ -23,7 +23,7 @@ def click(): #Клик
      pyautogui.mouseUp()
 
 
-def IsOn():
+def IsOn(): #Переключатель
     global on 
     if on == False:
         on = True
